@@ -1,201 +1,142 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Licit.ai - Consultoria em Licitações</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-white text-gray-800">
-  <!-- Header -->
-  <header class="bg-blue-900 text-white">
-    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-      <h1 class="text-2xl font-bold">Licit.ai</h1>
-      <nav class="space-x-4 hidden md:flex">
-        <a href="#" class="hover:text-yellow-300">Início</a>
-        <a href="#" class="hover:text-yellow-300">Sobre</a>
-        <a href="#" class="hover:text-yellow-300">Serviços</a>
-        <a href="#" class="hover:text-yellow-300">Depoimentos</a>
-        <a href="#" class="hover:text-yellow-300">Contato</a>
-      </nav>
-      <a href="#" class="bg-yellow-400 text-blue-900 px-4 py-2 rounded font-semibold hover:bg-yellow-300">Fale Conosco</a>
-    </div>
-  </header>
+import React from "react";
+import { Button } from "@/components/ui/button";
 
-  <!-- Hero Section -->
-  <section class="bg-blue-50 py-16">
-    <div class="max-w-6xl mx-auto text-center px-4">
-      <h2 class="text-4xl font-bold mb-4">Consultoria Especializada em Licitações Públicas</h2>
-      <p class="text-lg mb-6">Aumente suas chances de vencer licitações com nossa equipe experiente.</p>
-      <a href="#" class="bg-blue-900 text-white px-6 py-3 rounded hover:bg-blue-800">Solicitar Diagnóstico Gratuito</a>
-    </div>
-  </section>
+export default function HomePage() {
+  return (
+    <div className="font-sans text-gray-800">
+      {/* Header */}
+      <header className="bg-white shadow-md">
+        <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+          <h1 className="text-2xl font-bold text-blue-700">Licit.ai</h1>
+          <nav className="space-x-6 text-sm">
+            <a href="#sobre" className="hover:text-blue-600">Sobre</a>
+            <a href="#servicos" className="hover:text-blue-600">Serviços</a>
+            <a href="#planos" className="hover:text-blue-600">Planos</a>
+            <a href="#contato" className="hover:text-blue-600">Contato</a>
+          </nav>
+        </div>
+      </header>
 
-  <!-- Benefícios -->
-  <section class="py-16 bg-white">
-    <div class="max-w-6xl mx-auto px-4">
-      <h3 class="text-2xl font-bold text-center mb-10">Por que contratar a Licit.ai?</h3>
-      <div class="grid md:grid-cols-4 gap-6 text-center">
-        <div>
-          <div class="text-blue-900 text-4xl mb-2">📚</div>
-          <h4 class="font-semibold">Expertise Técnica</h4>
+      {/* Hero Section */}
+      <section className="bg-blue-700 text-white py-20">
+        <div className="max-w-4xl mx-auto text-center px-4">
+          <h2 className="text-4xl font-bold mb-4">Simplificando o acesso às licitações públicas</h2>
+          <p className="text-lg mb-6">Automatize, economize tempo e aproveite oportunidades com a Licit.ai.</p>
+          <Button className="bg-white text-blue-700 font-semibold hover:bg-gray-100">Conheça Agora</Button>
         </div>
-        <div>
-          <div class="text-blue-900 text-4xl mb-2">⚡</div>
-          <h4 class="font-semibold">Agilidade no Processo</h4>
+      </section>
+
+      {/* Sobre */}
+      <section id="sobre" className="py-16 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4">
+          <h3 className="text-2xl font-bold mb-4 text-blue-700">Sobre a Licit.ai</h3>
+          <p className="text-gray-700 leading-relaxed">A Licit.ai nasceu com a missão de democratizar o acesso a licitações públicas por meio de tecnologia. Com nossa plataforma, você encontra oportunidades ideais para o seu negócio com rapidez e precisão.</p>
         </div>
-        <div>
-          <div class="text-blue-900 text-4xl mb-2">✅</div>
-          <h4 class="font-semibold">Conformidade Garantida</h4>
+      </section>
+
+      {/* Serviços */}
+      <section id="servicos" className="py-16">
+        <div className="max-w-5xl mx-auto px-4">
+          <h3 className="text-2xl font-bold mb-8 text-blue-700">Nossos Serviços</h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white shadow-md p-6 rounded-lg">
+              <h4 className="font-semibold text-lg mb-2">Busca Inteligente</h4>
+              <p className="text-sm text-gray-600">Encontre licitações públicas com filtros personalizados e inteligência artificial.</p>
+            </div>
+            <div className="bg-white shadow-md p-6 rounded-lg">
+              <h4 className="font-semibold text-lg mb-2">Alertas Diários</h4>
+              <p className="text-sm text-gray-600">Receba notificações automáticas com oportunidades alinhadas ao seu perfil.</p>
+            </div>
+            <div className="bg-white shadow-md p-6 rounded-lg">
+              <h4 className="font-semibold text-lg mb-2">Consultoria Especializada</h4>
+              <p className="text-sm text-gray-600">Apoio personalizado para ajudar você a participar e vencer licitações.</p>
+            </div>
+          </div>
         </div>
-        <div>
-          <div class="text-blue-900 text-4xl mb-2">🤝</div>
-          <h4 class="font-semibold">Acompanhamento Completo</h4>
+      </section>
+
+      {/* Planos */}
+      <section id="planos" className="py-16 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4">
+          <h3 className="text-2xl font-bold mb-8 text-blue-700">Planos</h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="border border-gray-300 p-6 rounded-lg text-center">
+              <h4 className="text-lg font-semibold mb-2">Básico</h4>
+              <p className="text-2xl font-bold mb-4">R$ 49/mês</p>
+              <ul className="text-sm text-gray-600 mb-4">
+                <li>✓ Acesso à busca de editais</li>
+                <li>✓ Alertas por e-mail</li>
+              </ul>
+              <Button className="w-full">Assinar</Button>
+            </div>
+            <div className="border border-blue-700 p-6 rounded-lg text-center bg-blue-50">
+              <h4 className="text-lg font-semibold mb-2">Profissional</h4>
+              <p className="text-2xl font-bold mb-4">R$ 99/mês</p>
+              <ul className="text-sm text-gray-600 mb-4">
+                <li>✓ Tudo do Básico</li>
+                <li>✓ Suporte prioritário</li>
+                <li>✓ Consultoria mensal</li>
+              </ul>
+              <Button className="w-full bg-blue-700 text-white hover:bg-blue-800">Assinar</Button>
+            </div>
+            <div className="border border-gray-300 p-6 rounded-lg text-center">
+              <h4 className="text-lg font-semibold mb-2">Empresarial</h4>
+              <p className="text-2xl font-bold mb-4">R$ 199/mês</p>
+              <ul className="text-sm text-gray-600 mb-4">
+                <li>✓ Tudo do Profissional</li>
+                <li>✓ Treinamentos exclusivos</li>
+                <li>✓ Atendimento dedicado</li>
+              </ul>
+              <Button className="w-full">Assinar</Button>
+            </div>
+          </div>
         </div>
+      </section>
+
+      {/* Newsletter */}
+      <section className="py-12 bg-white">
+        <div className="max-w-xl mx-auto text-center px-4">
+          <h4 className="text-xl font-bold mb-2 text-blue-700">Receba novidades e oportunidades</h4>
+          <p className="text-sm text-gray-600 mb-4">Assine nossa newsletter e fique por dentro do mundo das licitações.</p>
+          <form className="flex flex-col sm:flex-row gap-2 justify-center">
+            <input type="email" placeholder="Seu e-mail" className="px-4 py-2 border rounded-md w-full sm:w-auto" />
+            <Button className="bg-blue-700 text-white">Inscrever-se</Button>
+          </form>
+        </div>
+      </section>
+
+      {/* Contato */}
+      <footer id="contato" className="bg-blue-900 text-white py-10 relative">
+        <div className="max-w-5xl mx-auto px-4 text-center">
+          <h4 className="text-xl font-bold mb-2">Entre em Contato</h4>
+          <p className="text-sm mb-4">contato@licit.ai | (11) 99999-9999</p>
+          <p className="text-xs text-gray-300">© 2025 Licit.ai - Todos os direitos reservados.</p>
+        </div>
+
+        {/* WhatsApp Button */}
+        <a href="https://wa.me/5511999999999?text=Olá%2C+tenho+interesse+na+Licit.ai" target="_blank" rel="noopener noreferrer" className="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-lg">
+          Fale conosco via WhatsApp
+        </a>
+      </footer>
+
+      {/* Chatbot Simples */}
+      <div className="fixed bottom-20 right-4 bg-white w-64 shadow-lg rounded-lg p-4 border">
+        <p className="text-sm font-semibold text-blue-700 mb-2">LicitBot:</p>
+        <div className="text-sm text-gray-700">Olá! Precisa de ajuda para entender como participar de licitações? Posso ajudar!</div>
       </div>
-    </div>
-  </section>
 
-  <!-- Serviços -->
-  <section class="py-16 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4">
-      <h3 class="text-2xl font-bold text-center mb-10">Nossos Serviços</h3>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="p-4 bg-white shadow rounded">
-          <h4 class="font-bold mb-2">Análise de Editais</h4>
-          <p>Identificação de oportunidades e avaliação de riscos e exigências.</p>
+      {/* Login Form */}
+      <section className="py-16 bg-gray-100">
+        <div className="max-w-md mx-auto px-4 bg-white p-6 rounded-lg shadow-md">
+          <h3 className="text-xl font-bold mb-4 text-blue-700 text-center">Acesse sua conta</h3>
+          <form className="flex flex-col gap-4">
+            <input type="email" placeholder="E-mail" className="border px-4 py-2 rounded-md" />
+            <input type="password" placeholder="Senha" className="border px-4 py-2 rounded-md" />
+            <Button className="bg-blue-700 text-white">Entrar</Button>
+            <p className="text-sm text-center text-gray-600">Não tem conta? <a href="#" className="text-blue-700 underline">Cadastre-se</a></p>
+          </form>
         </div>
-        <div class="p-4 bg-white shadow rounded">
-          <h4 class="font-bold mb-2">Preparação de Documentação</h4>
-          <p>Organização completa de documentos conforme o edital.</p>
-        </div>
-        <div class="p-4 bg-white shadow rounded">
-          <h4 class="font-bold mb-2">Apoio em Pregão Eletrônico</h4>
-          <p>Orientação e suporte em tempo real durante os certames.</p>
-        </div>
-        <div class="p-4 bg-white shadow rounded">
-          <h4 class="font-bold mb-2">Treinamento de Equipe</h4>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Licit.ai - Consultoria em Licitações</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-white text-gray-800">
-  <!-- Header -->
-  <header class="bg-blue-900 text-white">
-    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-      <h1 class="text-2xl font-bold">Licit.ai</h1>
-      <nav class="space-x-4 hidden md:flex">
-        <a href="#" class="hover:text-yellow-300">Início</a>
-        <a href="#sobre" class="hover:text-yellow-300">Sobre</a>
-        <a href="#servicos" class="hover:text-yellow-300">Serviços</a>
-        <a href="#depoimentos" class="hover:text-yellow-300">Depoimentos</a>
-        <a href="#contato" class="hover:text-yellow-300">Contato</a>
-      </nav>
-      <a href="#contato" class="bg-yellow-400 text-blue-900 px-4 py-2 rounded font-semibold hover:bg-yellow-300">Fale Conosco</a>
+      </section>
     </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="bg-blue-50 py-16">
-    <div class="max-w-6xl mx-auto text-center px-4">
-      <h2 class="text-4xl font-bold mb-4">Consultoria Especializada em Licitações Públicas</h2>
-      <p class="text-lg mb-6">Aumente suas chances de vencer licitações com nossa equipe experiente.</p>
-      <a href="#contato" class="bg-blue-900 text-white px-6 py-3 rounded hover:bg-blue-800">Receba um diagnóstico gratuito</a>
-    </div>
-  </section>
-
-  <!-- Benefícios -->
-  <section class="py-16 bg-white" id="sobre">
-    <div class="max-w-6xl mx-auto px-4">
-      <h3 class="text-2xl font-bold text-center mb-10">Por que contratar a Licit.ai?</h3>
-      <div class="grid md:grid-cols-4 gap-6 text-center">
-        <div>
-          <div class="text-blue-900 text-4xl mb-2">📚</div>
-          <h4 class="font-semibold">Expertise Técnica</h4>
-        </div>
-        <div>
-          <div class="text-blue-900 text-4xl mb-2">⚡</div>
-          <h4 class="font-semibold">Agilidade no Processo</h4>
-        </div>
-        <div>
-          <div class="text-blue-900 text-4xl mb-2">✅</div>
-          <h4 class="font-semibold">Conformidade Garantida</h4>
-        </div>
-        <div>
-          <div class="text-blue-900 text-4xl mb-2">🤝</div>
-          <h4 class="font-semibold">Acompanhamento Completo</h4>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Serviços -->
-  <section class="py-16 bg-gray-50" id="servicos">
-    <div class="max-w-6xl mx-auto px-4">
-      <h3 class="text-2xl font-bold text-center mb-10">Nossos Serviços</h3>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="p-4 bg-white shadow rounded">
-          <h4 class="font-bold mb-2">Análise de Editais</h4>
-          <p>Identificação de oportunidades e avaliação de riscos e exigências.</p>
-        </div>
-        <div class="p-4 bg-white shadow rounded">
-          <h4 class="font-bold mb-2">Preparação de Documentação</h4>
-          <p>Organização completa de documentos conforme o edital.</p>
-        </div>
-        <div class="p-4 bg-white shadow rounded">
-          <h4 class="font-bold mb-2">Apoio em Pregão Eletrônico</h4>
-          <p>Orientação e suporte em tempo real durante os certames.</p>
-        </div>
-        <div class="p-4 bg-white shadow rounded">
-          <h4 class="font-bold mb-2">Treinamento de Equipe</h4>
-          <p>Capacitação personalizada para sua equipe participar de licitações.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Depoimentos -->
-  <section class="py-16 bg-white" id="depoimentos">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h3 class="text-2xl font-bold mb-10">O que dizem nossos clientes</h3>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-gray-100 p-6 rounded shadow">
-          <p class="italic">“Graças à Licit.ai, ganhamos 3 licitações em 2024 com total suporte técnico e jurídico.”</p>
-          <p class="mt-4 font-semibold">– João P., CEO da Soluções XYZ</p>
-        </div>
-        <div class="bg-gray-100 p-6 rounded shadow">
-          <p class="italic">“Equipe extremamente competente e acessível. Recomendo para qualquer empresa iniciando nas licitações.”</p>
-          <p class="mt-4 font-semibold">– Ana C., Diretora da TecNova</p>
-        </div>
-        <div class="bg-gray-100 p-6 rounded shadow">
-          <p class="italic">“Excelente atendimento e resultados rápidos. Nos sentimos seguros durante todo o processo.”</p>
-          <p class="mt-4 font-semibold">– Carlos M., Gestor Público</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contato -->
-  <section class="py-16 bg-blue-900 text-white" id="contato">
-    <div class="max-w-4xl mx-auto px-4">
-      <h3 class="text-2xl font-bold text-center mb-8">Fale Conosco</h3>
-      <form class="space-y-4">
-        <input class="w-full p-3 rounded text-black" type="text" placeholder="Nome" />
-        <input class="w-full p-3 rounded text-black" type="email" placeholder="E-mail" />
-        <input class="w-full p-3 rounded text-black" type="tel" placeholder="Telefone" />
-        <textarea class="w-full p-3 rounded text-black" rows="4" placeholder="Mensagem"></textarea>
-        <button class="bg-yellow-400 text-blue-900 px-6 py-3 rounded font-semibold hover:bg-yellow-300">Enviar</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-100 text-center text-sm p-4">
-    <p>&copy; 2025 Licit.ai. Todos os direitos reservados.</p>
-  </footer>
-</body>
-</html>
+  );
+}
