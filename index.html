@@ -63,13 +63,15 @@
       gap: 2rem;
       justify-content: space-around;
       text-align: center;
+      flex-wrap: wrap;
     }
     .benefit {
       background: white;
       padding: 1.5rem;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      flex: 1;
+      flex: 1 1 200px;
+      margin-bottom: 1.5rem;
     }
     .case {
       background: white;
@@ -77,6 +79,50 @@
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
       margin-bottom: 2rem;
+    }
+    .faq-item {
+      background: white;
+      padding: 1.5rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      margin-bottom: 1rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: 'Open Sans', sans-serif;
+      resize: vertical;
+    }
+    form button {
+      padding: 1rem;
+      background: #1A237E;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .stat-item {
+      background: white;
+      flex: 1 1 150px;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #1A237E;
     }
     footer {
       background-color: #1A237E;
@@ -123,6 +169,29 @@
     </div>
   </section>
 
+  <!-- Nova Seção: Como Funciona -->
+  <section class="section">
+    <h3 style="text-align:center; font-family:'Montserrat'; font-size:2rem;">Como Funciona</h3>
+    <div class="benefits">
+      <div class="benefit">
+        <h4>1. Cadastro</h4>
+        <p>Você se cadastra e preenche o perfil da sua empresa.</p>
+      </div>
+      <div class="benefit">
+        <h4>2. Monitoramento</h4>
+        <p>Nossa IA monitora editais e oportunidades em tempo real.</p>
+      </div>
+      <div class="benefit">
+        <h4>3. Propostas</h4>
+        <p>Geramos e organizamos seus documentos automaticamente.</p>
+      </div>
+      <div class="benefit">
+        <h4>4. Suporte</h4>
+        <p>Você conta com atendimento humano e assistente virtual.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="section">
     <h3 style="text-align: center; font-family: 'Montserrat'; font-size: 2rem;">Cases de Sucesso</h3>
 
@@ -139,11 +208,49 @@
     </div>
 
     <div class="case">
-      <h4>Sol Energia Instalações - Otimização e escala com IA</h4>
-      <p>Com dashboards inteligentes e suporte telefônico automatizado, a SolEnergia cresceu e venceu contratos que somam R$ 460.000,00.</p>
+      <h4>Sol Energia Instalações - </h4>
+      <p>Com dashboards inteligentes e suporte telefônico automatizado, a Sol Energia cresceu e venceu contratos que somam R$ 460.000,00.</p>
       <em>“A automação nos permitiu escalar de verdade. A Licit.ai é nosso departamento de licitações.” — Carlos Mendes| Co-CEO</em>
     </div>
 
+  </section>
+
+  <!-- Nova Seção: Perguntas Frequentes -->
+  <section class="section">
+    <h3 style="text-align:center; font-family:'Montserrat'; font-size:2rem;">Perguntas Frequentes</h3>
+    <div class="faq-item">
+      <h4>Preciso ter experiência com licitações?</h4>
+      <p>Não! Nossa plataforma foi feita para quem está começando e para quem já atua no setor.</p>
+    </div>
+    <div class="faq-item">
+      <h4>O que está incluso na assinatura?</h4>
+      <p>Alertas personalizados, análise de editais, documentos automatizados e suporte completo.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Como funciona o atendimento?</h4>
+      <p>Você conta com chatbot, suporte humano por WhatsApp e ligações ativas quando necessário.</p>
+    </div>
+  </section>
+
+  <!-- Nova Seção: Estatísticas -->
+  <section class="section">
+    <h3 style="text-align:center; font-family:'Montserrat'; font-size:2rem;">Nossas Estatísticas</h3>
+    <div class="stats">
+      <div class="stat-item">+1.200 oportunidades monitoradas por mês</div>
+      <div class="stat-item">89% de clientes com propostas aprovadas</div>
+      <div class="stat-item">R$ 1,3 milhão em contratos conquistados</div>
+    </div>
+  </section>
+
+  <!-- Nova Seção: Contato -->
+  <section class="section">
+    <h3 style="text-align:center; font-family:'Montserrat'; font-size:2rem;">Fale com a gente</h3>
+    <form style="max-width:600px; margin:auto; display:flex; flex-direction:column; gap:1rem;">
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu e-mail" required />
+      <textarea placeholder="Como podemos ajudar?" rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
   </section>
 
   <footer>
@@ -151,3 +258,4 @@
   </footer>
 </body>
 </html>
+
