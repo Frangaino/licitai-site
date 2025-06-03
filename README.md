@@ -71,6 +71,13 @@
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       flex: 1;
     }
+    .case {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      margin-bottom: 2rem;
+    }
     footer {
       background-color: #1A237E;
       color: white;
@@ -116,8 +123,32 @@
     </div>
   </section>
 
+  <section class="section">
+    <h3 style="text-align: center; font-family: 'Montserrat'; font-size: 2rem;">Cases de Sucesso</h3>
+
+    <div class="case">
+      <h4>TechJunior Informática - Do zero ao primeiro contrato público</h4>
+      <p>A microempresa usou alertas personalizados, chatbot e repositório digital da Licit.ai para vencer uma licitação de R$ 38.000,00 em apenas 3 meses.</p>
+      <em>“Eu nunca imaginei que fosse possível concorrer com empresas grandes. A Licit.ai traduziu o processo para mim.” — Rodrigo Silva</em>
+    </div>
+
+    <div class="case">
+      <h4>NutriVerde Refeições - Crescimento acelerado via compras públicas</h4>
+      <p>Com propostas automáticas, WhatsApp bot e comparação de preços, a empresa conquistou contratos que somam R$ 210.000,00.</p>
+      <em>“Hoje, 60% da nossa receita vem do setor público.” — Ana Beatriz Cardoso</em>
+    </div>
+
+    <div class="case">
+      <h4>SolEnergia Instalações - Otimização e escala com IA</h4>
+      <p>Com dashboards inteligentes e suporte telefônico automatizado, a SolEnergia cresceu e venceu contratos que somam R$ 460.000,00.</p>
+      <em>“A automação nos permitiu escalar de verdade. A Licit.ai é nosso departamento de licitações.” — Carlos Mendes</em>
+    </div>
+
+  </section>
+
   <footer>
     <p>&copy; 2025 licit.ai. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
+
