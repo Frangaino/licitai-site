@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>licit.ai - Licitações com Inteligência</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #F5F5F5;
+      color: #333;
+    }
+    header {
+      background-color: #1A237E;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 span {
+      color: #6A1B9A;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(135deg, #6A1B9A, #1A237E);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+    .hero button {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background-color: #FFFFFF;
+      color: #1A237E;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .benefits {
+      display: flex;
+      gap: 2rem;
+      justify-content: space-around;
+      text-align: center;
+    }
+    .benefit {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      flex: 1;
+    }
+    footer {
+      background-color: #1A237E;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>licit<span>.ai</span></h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Serviços</a>
+      <a href="#">Casos de Sucesso</a>
+      <a href="#">Blog</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Transforme sua empresa em uma fornecedora do governo com inteligência artificial</h2>
+    <p>Consultoria especializada em licitações públicas com tecnologia de ponta</p>
+    <button>Agendar Demonstração</button>
+  </section>
+
+  <section class="section">
+    <h3 style="text-align: center; font-family: 'Montserrat'; font-size: 2rem;">Nossos Diferenciais</h3>
+    <div class="benefits">
+      <div class="benefit">
+        <h4>Automatização</h4>
+        <p>Reduza o tempo gasto com processos manuais.</p>
+      </div>
+      <div class="benefit">
+        <h4>Análise com IA</h4>
+        <p>Detecte as melhores oportunidades com rapidez e precisão.</p>
+      </div>
+      <div class="benefit">
+        <h4>Suporte Personalizado</h4>
+        <p>Conte com um time dedicado em todas as etapas.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 licit.ai. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
