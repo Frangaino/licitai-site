@@ -1,14 +1,4 @@
-# licit.ai — Plataforma Inteligente para Licitações Públicas
 
-A **licit.ai** é uma empresa de base tecnológica que oferece uma plataforma digital com inteligência artificial voltada para micro, pequenas e médias empresas que desejam atuar no mercado de compras governamentais.
-
-Este repositório contém o **frontend do site institucional**, desenvolvido em HTML e CSS puro, e está hospedado via **GitHub Pages**.
-
-## 🌐 Acesse o site
-
-🔗 https://seu-usuario.github.io/licitai-site/
-
-> Substitua `seu-usuario` pelo seu nome de usuário no GitHub.
 
 ---
 
@@ -21,7 +11,7 @@ Este repositório contém o **frontend do site institucional**, desenvolvido em 
 
 ---
 
-## 💼 Casos de Sucesso
+## 💼 Cases de Sucesso
 
 **Tech Junior Informática**  
 _"Conquistou sua primeira licitação pública em 3 meses com apoio do nosso chatbot e automação de documentos."_
